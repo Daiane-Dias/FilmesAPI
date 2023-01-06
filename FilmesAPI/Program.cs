@@ -1,5 +1,10 @@
+using FilmesAPI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddDbContext<FilmeContext>(opts=>
+opts.use)
 // Add services to the container.
 
 builder.Services.AddControllers();
